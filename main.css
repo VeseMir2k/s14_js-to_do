@@ -33,14 +33,14 @@ body {
 }
 
 /* Blur - modal */
-.wrap::after {
-  display: none;
-  content: "";
+.blur-modal {
+  display: flex;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: -1;
   backdrop-filter: blur(5px);
 }
 
@@ -98,7 +98,7 @@ header h1 {
   text-align: center;
 }
 
-header .add-task-modal-btn {
+header .open-modal-btn {
   position: absolute;
   top: 50%;
   right: 5px;

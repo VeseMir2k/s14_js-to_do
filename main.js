@@ -1,4 +1,14 @@
-const addTaskModalBtn = document.querySelector(".add-task-modal-btn");
-const addTaskBtn = document.querySelector(".add-task-btn");
+const openModalBtn = document.querySelector(".open-modal-btn");
 const exitModalBtn = document.querySelector(".exit-modal-btn");
+const addTaskBtn = document.querySelector(".add-task-btn");
 const addTaskInput = document.querySelector(".add-task-modal input");
+
+const blurModal = document.querySelector(".blur-modal");
+const addTaskModal = document.querySelector(".add-task-modal");
+
+const openModal = () => {
+  blurModal.style.zIndex = 1;
+  addTaskModal.style.display = "flex";
+};
+
+openModalBtn.addEventListener("click", openModal);
