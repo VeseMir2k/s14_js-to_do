@@ -5,17 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do</title>
+    <script
+      src="https://kit.fontawesome.com/9863b38e12.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <div class="wrap">
+      <!-- Modal -->
+      <div class="add-task-modal">
+        <h2>DODAJ ZADANIE</h2>
+        <button class="exit-task-modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <input type="text" />
+        <button class="add-task">DODAJ</button>
+      </div>
+      <!-- Header -->
       <header>
         <h1>TO DO</h1>
+        <button class="add-task-modal-btn"><i class="fas fa-plus"></i></button>
       </header>
+      <!-- Main -->
       <main>
         <ul></ul>
       </main>
-      <footer></footer>
+      <!-- Footer -->
+      <footer>&copy; VeseMir2k</footer>
     </div>
     <script src="main.js"></script>
   </body>

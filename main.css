@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Yomogi&display=swap");
+
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Yomogi', cursive; */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+}
+
+/* Wrap */
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 500px;
+  height: 600px;
+  margin-top: 50px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+/* Blur - modal */
+.wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* backdrop-filter: blur(5px); */
+}
+
+/* Modal */
+
+.add-task-modal {
+  position: absolute;
+  top: -100%;
+  left: 5%;
+  right: 5%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-task-modal h2 {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.add-task-modal .exit-task-modal {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.add-task-modal input {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.6rem;
+}
+
+.add-task-modal .add-task {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+/* Header */
+header {
+  position: relative;
+  display: flex;
+  background-color: #333;
+}
+
+header h1 {
+  flex-basis: 100%;
+  padding: 10px 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+header .add-task-modal-btn {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+/* Main */
+main {
+  flex-basis: 100%;
+  padding: 10px;
+  /* background-color: tomato; */
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  background-color: #333;
+}
