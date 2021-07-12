@@ -11,4 +11,10 @@ const openModal = () => {
   addTaskModal.style.display = "flex";
 };
 
+const exitModal = () => {
+  blurModal.style.zIndex = -1;
+  addTaskModal.style.display = "none";
+};
+
 openModalBtn.addEventListener("click", openModal);
+exitModalBtn.addEventListener("click", exitModal);
