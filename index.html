@@ -20,8 +20,14 @@
         <button class="exit-modal-btn">
           <i class="fas fa-times"></i>
         </button>
-        <input type="text" />
-        <button class="add-task-btn">DODAJ</button>
+        <form>
+          <div class="task-input">
+            <label for="name">Tytuł:</label>
+            <input id="name" class="task-name-input" type="text" />
+            <div class="error-name"></div>
+          </div>
+          <button class="add-task-btn">DODAJ</button>
+        </form>
       </div>
       <!-- Header -->
       <header>

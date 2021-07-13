@@ -72,16 +72,38 @@ body {
   right: 5px;
 }
 
-.add-task-modal input {
+.add-task-modal form {
+  display: flex;
+  flex-direction: column;
   width: 70%;
-  margin-bottom: 10px;
+}
+
+.add-task-modal .task-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task-modal .task-input label {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.add-task-modal .task-input input {
+  width: 100%;
   padding: 5px;
+  margin-bottom: 10px;
   font-size: 1.6rem;
 }
 
 .add-task-modal .add-task-btn {
   padding: 5px 15px;
   margin-bottom: 10px;
+}
+
+.add-task-modal .error-name {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: red;
 }
 
 /* Header */
@@ -109,7 +131,6 @@ header .open-modal-btn {
 main {
   flex-basis: 100%;
   padding: 10px;
-  /* background-color: tomato; */
 }
 
 /* Footer */
