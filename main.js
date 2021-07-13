@@ -61,6 +61,18 @@ const showTasks = () => {
     li.appendChild(btn);
     tasksUl.appendChild(li);
   });
+  deleteTask();
+};
+
+const deleteTask = () => {
+  const li = document.querySelectorAll("li.task .delete-task-btn");
+
+  li.forEach((deleteBtn, index) => {
+    deleteBtn.addEventListener("click", () => {
+      tasks.splice(index, 1);
+      showTasks();
+    });
+  });
 };
 
 showTasks();
