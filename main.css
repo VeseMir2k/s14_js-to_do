@@ -5,6 +5,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -130,7 +131,21 @@ header .open-modal-btn {
 /* Main */
 main {
   flex-basis: 100%;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+main ul {
+  width: 80%;
+  list-style: none;
+}
+
+main ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 10px 0;
 }
 
 /* Footer */
